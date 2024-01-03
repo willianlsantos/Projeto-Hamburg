@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik Doodle Shadow";
+    font-family: 'Single Day', cursive;
+    font-family: 'Carattere', cursive;
+}
+
+body {
+    background-image: url(./assets/fundo-\ tela.jpg);
+    background-size: cover;
+}
+
+.container {
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 10% 70% 20%;
+    grid-template-columns: 60% 40%;
+
+
+}
+
+header {
+    grid-column: 1/3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-logo {
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+.div-li {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    color: white;
+}
+
+li {
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    font-family: "carattere", cursive;
+}
+
+li span {
+    color: darkorange;
+}
+
+li:hover {
+    color: darkorange;
+    opacity: 0.6;
+}
+
+
+li,
+.img-usuarios {
+    margin: auto 0;
+}
+
+.img-usuarios {
+    margin-right: 80px;
+}
+
+.img-link {
+    width: 30px;
+    margin: 10px;
+}
+
+.img-user {
+    width: 20px;
+}
+
+
+main {
+    /* background: blue; */
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.img-principal {
+    max-height: 85vh;
+    width: 100%;
+    filter: drop-shadow(5px 10px 15px);
+    animation: drone-3d 2s infinite alternate;
+
+}
+
+@keyframes drone-3d {
+    from {
+        transform: translateX(-70px);
+    }
+
+    to {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(30px);
+    }
+}
+
+
+aside {
+    /* background: yellow; */
+    grid-row: 2/4;
+    display: grid;
+    grid-template-rows: 75% 25%;
+
+}
+
+.div-texto {
+    margin: auto 0;
+}
+
+h1 {
+    width: 900px;
+    font-size: 100px;
+    color: white;
+    font-family: "Rubik Doodle Shadow";
+    font-weight: 400;
+    text-align: start;
+    margin-left: 90px;
+
+}
+
+p {
+    width: 1000px;
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0 30px 90px;
+    color: white;
+    font-family: 'Single Day', cursive;
+    font-weight: 400;
+
+}
+
+.div-btn {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-left: 90px;
+}
+
+button {
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: orange;
+    font-family: 'Single Day', cursive;
+    font-weight: 400;
+}
+
+.btn-principal {
+    cursor: pointer;
+    border: none;
+}
+
+.btn-principal:hover {
+    color: orange;
+    background: white;
+    opacity: 0.8;
+}
+
+.btn-principal:active {
+    opacity: 0.4;
+}
+
+.btn-segundo {
+    background: none;
+    transition: opacity 0.5s ease-in-out;
+    color: orange;
+    cursor: pointer;
+
+}
+
+.btn-segundo:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+.div-imgs-hambung {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    margin-left: 90px;
+    height: 60%;
+    margin-top: 20px;
+}
+
+.div-img-itens {
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+}
+
+.div-img-itens:hover {
+    border: 1px solid orange;
+}
+
+.img-itens {
+    width: 100px;
+    object-fit: fill;
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+}
+
+.img-itens:hover {
+    transform: scale(1.3) rotate(15deg);
+}
+
+
+.img-itens:active {
+    opacity: 0.4;
+}
